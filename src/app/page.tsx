@@ -33,7 +33,9 @@ interface ApiError {
 }
 
 // API Functions
-const API_URL = process.env.NEXT_PUBLIC_API_URL;
+const API_URL =
+  process.env.NEXT_PUBLIC_API_URL ||
+  "https://chatbot-backend-seven-xi.vercel.app";
 console.log(API_URL);
 
 async function sendChatMessage(
