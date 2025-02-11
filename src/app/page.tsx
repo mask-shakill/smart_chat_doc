@@ -33,7 +33,7 @@ interface ApiError {
 }
 
 // API Functions
-const API_URL = process.env.NEXT_PUBLIC_API_URL || "http://localhost:8080";
+const API_URL = process.env.NEXT_PUBLIC_API_URL;
 console.log(API_URL);
 
 async function sendChatMessage(
