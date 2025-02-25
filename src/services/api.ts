@@ -1,8 +1,6 @@
 import type { ChatResponse, ApiError } from "@/types/chat";
 
-const API_URL =
-  process.env.NEXT_PUBLIC_API_URL ||
-  "https://chatbot-backend-seven-xi.vercel.app";
+const API_URL = process.env.NEXT_PUBLIC_API_URL;
 
 export async function sendChatMessage(
   prompt: string,
